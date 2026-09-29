@@ -1,0 +1,169 @@
+<!DOCTYPE html><html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mon Carnet Musculation</title><style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #101114;
+    color: white;
+}
+
+header {
+    padding: 25px 15px;
+    text-align: center;
+    background: #181a1f;
+    border-bottom: 1px solid #30333a;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+header p {
+    margin: 8px 0 0;
+    color: #aaa;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px 15px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.card {
+    background: #1b1e24;
+    border: 1px solid #30343c;
+    border-radius: 14px;
+    padding: 20px 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.card:active {
+    transform: scale(0.97);
+}
+
+.card .icon {
+    font-size: 34px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.card strong {
+    font-size: 16px;
+}
+
+.section {
+    margin-top: 30px;
+}
+
+.section h2 {
+    margin-bottom: 12px;
+}
+
+.info {
+    background: #1b1e24;
+    border-radius: 14px;
+    padding: 18px;
+    color: #ccc;
+    line-height: 1.5;
+}
+
+footer {
+    text-align: center;
+    color: #777;
+    padding: 30px 15px;
+}
+
+@media (min-width: 700px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+</style></head><body><header>
+    <h1>🏋️ Mon Carnet Musculation</h1>
+    <p>Mes exercices, vidéos, photos et notes</p>
+</header><div class="container"><div class="grid">
+
+    <div class="card" onclick="ouvrir('Pectoraux')">
+        <span class="icon">💪</span>
+        <strong>Pectoraux</strong>
+    </div>
+
+    <div class="card" onclick="ouvrir('Dos')">
+        <span class="icon">🦾</span>
+        <strong>Dos</strong>
+    </div>
+
+    <div class="card" onclick="ouvrir('Épaules')">
+        <span class="icon">🏋️</span>
+        <strong>Épaules</strong>
+    </div>
+
+    <div class="card" onclick="ouvrir('Biceps')">
+        <span class="icon">💪</span>
+        <strong>Biceps</strong>
+    </div>
+
+    <div class="card" onclick="ouvrir('Triceps')">
+        <span class="icon">💪</span>
+        <strong>Triceps</strong>
+    </div>
+
+    <div class="card" onclick="ouvrir('Jambes')">
+        <span class="icon">🦵</span>
+        <strong>Jambes</strong>
+    </div>
+
+    <div class="card" onclick="ouvrir('Abdos')">
+        <span class="icon">🔥</span>
+        <strong>Abdos</strong>
+    </div>
+
+    <div class="card" onclick="ouvrir('Photos')">
+        <span class="icon">📸</span>
+        <strong>Photos</strong>
+    </div>
+
+    <div class="card" onclick="ouvrir('Notes')">
+        <span class="icon">📝</span>
+        <strong>Notes</strong>
+    </div>
+
+</div>
+
+<div class="section">
+    <h2>📋 Mon carnet</h2>
+
+    <div class="info">
+        <p><strong>Bienvenue dans ton carnet de musculation.</strong></p>
+        <p>
+            Tu pourras y ajouter tes exercices,
+            tes petites vidéos de démonstration,
+            tes photos et tes notes personnelles.
+        </p>
+    </div>
+</div>
+
+</div><footer>
+    Mon Carnet Musculation
+</footer><script>
+function ouvrir(section) {
+    alert("Section : " + section + "\n\nLes exercices et vidéos seront ajoutés dans cette section.");
+}
+</script></body>
+  </html>
